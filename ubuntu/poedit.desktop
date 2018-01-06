@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Poedit
+Exec=/home/dongxu/programmes/poedit2.0.2/bin/poedit %f
+Icon=/home/dongxu/programmes/poedit2.0.2/share/icons/hicolor/48x48/apps/poedit.png
+Terminal=false
+Type=Application
+Categories=language;translation;

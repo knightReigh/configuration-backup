@@ -1,0 +1,25 @@
+" this pacakge is deprecated
+UnBundle 'amirh/HTML-AutoCloseTag'
+"UnBundle 'klen/python-mode'
+"UnBundle 'pythoncomplete'
+"UnBundle 'Shougo/neocomplete.vim.git'
+
+let g:python_fold = 1
+let g:markdown_syntax_conceal = 0
+
+
+set foldmethod=indent
+
+" allow copy/paste with mouse
+set mouse=r                 " changed from 'mouse=a'
+
+" toggle line number with F2
+nnoremap <F2> :set nonumber!<CR>
+
+" custom color scheme
+colorscheme molokai
+" colorscheme ir_black
+"
+
+"Set textwrap
+set wrap linebreak nolist

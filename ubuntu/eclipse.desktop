@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Eclipse
+Comment=Eclipse Integrated Environment
+Exec=/home/dongxu/programmes/eclipse/javascript-neon/eclipse/eclipse %f
+Icon=/home/dongxu/programmes/eclipse/javascript-neon/eclipse/icon.xpm
+Terminal=false
+Type=Application
+Categories=Development;IDE;Java;
+StartupWMClass=Eclipse

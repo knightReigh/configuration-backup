@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Blender
+GenericName=3D modeler
+GenericName[zh_CN]=3D 建模
+Comment=3D modeling, animation, rendering and post-production
+Comment[zh_CN]=3D 建模、动画、渲染和后期制作
+Keywords=3d;cg;modeling;animation;painting;sculpting;texturing;video editing;video tracking;rendering;render engine;cycles;game engine;python;
+Exec=/home/dongxu/programmes/blender-2.78c/blender %f
+Icon=blender
+Terminal=false
+Type=Application
+Categories=Graphics;3DGraphics;
+MimeType=application/x-blender;

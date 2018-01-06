@@ -1,0 +1,103 @@
+" vim: set sw=4 ts=4 sts=4 et tw=78 foldmarker={,} foldlevel=0 foldmethod=marker:
+
+" Trying to get the ALT key functional for binding :
+let g:UltiSnipsExpandTrigger="^[/"
+
+" spf13 disabling some options :
+let g:spf13_bundle_groups=['general', 'writing', 'neocomplete', 'programming', 'javascript', 'html', 'misc',]
+
+" Disable indent highlighting
+let g:indent_guides_enable_on_vim_startup=0
+let g:indent_guides_auto_colors = 0
+
+" Use neocomplete.
+let g:neocomplete#enable_at_startup = 1
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+"" AutoComplPop like behavior.
+"let g:neocomplete#enable_auto_select = 1
+" Enable omni completion.
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+
+
+"" Use smartcase.
+"let g:neocomplete#enable_smart_case = 1
+"" Case sensitive to complete
+"let g:neocomplete#enable_camel_case = 1
+
+" Disable auto-pairs:
+"let b:AutoPairs = {"(": ")"}
+
+" Rainbow plugin : (parenthesis and brackets colored by level)
+let g:rainbow_active = 1
+
+" { Status Bar with Airline
+
+" Vim-airline plugin
+let g:airline_theme = 'solarized'
+
+" see for patching terminal fonts :
+" https://powerline.readthedocs.org/en/latest/installation/linux.html#font-installation
+let g:airline_powerline_fonts=1
+
+"Automatically displays all buffers when there's only one tab open :
+let g:airline#extensions#tabline#enabled = 1
+
+" To avoid duplicating infos given by status line :
+let g:bufferline_echo = 0
+
+"}
+
+"{ nvim
+" nvim clipboard message
+if has('nvim')
+  let g:yankring_clipboard_monitor = (has("nvim") ? 0 : 1)
+  let g:neocomplete#enable_at_startup = 0
+  let g:deoplete#enable_at_startup = 1
+  "let g:deoplete#enable_refresh_always = 1 "Deoplete refreshes the candidates automatically
+endif
+"}
+
+" {Python pymode plugin :
+"let g:pymode = 0
+"let g:pymode_breakpoint = 0
+
+let g:pymode_options_max_line_length = 79
+let g:pymode_indent = 1 " pep8 indent
+let g:pymode_lint_checkers = ['pep8', 'pyflakes'] " pep8 code checker
+let g:pymode_folding = 1
+let g:pymode_motion = 1
+let g:pymode_doc = 1
+let g:pymode_doc_bind = 'K'
+let g:pymode_syntax = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_slow_sync = 1 " slower syntax sync
+
+" Disable leader+r to run script
+let g:pymode_run = 0
+
+" pymode syntax
+let g:pymode_syntax = 1
+"let g:pymode_syntax_builtin_objs = g:pymode_syntax_all
+"let g:pymode_syntax_builtin_funcs = 1
+
+" Python code checking :
+let g:pymode_lint = 1
+let g:pymode_lint_on_write = 0
+" ignore error #E501 and all warnings :
+let g:pymode_lint_ignore = "E501,W"
+let g:pymode_lint_signs = 1
+let g:pymode_lint_cwindow = 0
+let g:pymode_lint_message = 1
+
+let g:pymode_rope = 0 " disable rope which is slow
+"}
+
+" {FastFold :
+let g:python_fold=1
+" To avoid z remapping and loosing nowait :
+let g:fastfold_fold_movement_commands = []
+ let g:fastfold_fold_command_suffixes = []
+" }

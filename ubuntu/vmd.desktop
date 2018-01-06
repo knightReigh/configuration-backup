@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Vmd
+Comment=3D modeling, animation, rendering and post-production
+Comment[zh_CN]=3D 建模、动画、渲染和后期制作
+Exec=/home/dongxu/programmes/vmd-1.9.3/bin/vmd %f
+Icon=/home/dongxu/programmes/vmd-1.9.3/vmd
+Terminal=false
+Type=Application
+Categories=moddling;simulation;
